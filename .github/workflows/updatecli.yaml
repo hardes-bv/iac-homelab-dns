@@ -1,0 +1,36 @@
+---
+name: Update Packages
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 16 * * 1,4 # Every Monday & Wednesday at 16h UTC
+permissions:
+  contents: read
+jobs:
+  updatecli:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0" # v7.0.0
+        with:
+          persist-credentials: false
+      - name: "Install mise"
+        uses: "jdx/mise-action@e6a8b3978addb5a52f2b4cd9d91eafa7f0ab959d" # v4.2.0
+        env:
+          MISE_FETCH_REMOTE_VERSIONS_TIMEOUT: 30s
+        with:
+          version: 2026.7.14
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # only saving the cache in the prerequisites job
+          cache_save: true
+      - name: Install uv
+        uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          # Install a specific version of uv.
+          version: "0.11.33"
+      - name: "Run updatecli"
+        run: updatecli compose apply --clean-git-branches=true
+        env:
+          UPDATECLI_GITHUB_APP_CLIENT_ID: ${{ secrets.UPDATECLI_GITHUB_APP_CLIENT_ID }}
+          UPDATECLI_GITHUB_APP_PRIVATE_KEY: ${{ secrets.UPDATECLI_GITHUB_APP_PRIVATE_KEY }}
+          UPDATECLI_GITHUB_APP_INSTALLATION_ID: ${{ secrets.UPDATECLI_GITHUB_APP_INSTALLATION_ID }}

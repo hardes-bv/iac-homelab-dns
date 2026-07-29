@@ -1,0 +1,30 @@
+name: "Upgrade the Pulumi Python dependencies"
+pipelineid: "scaleway-root-dns-update-python-deps"
+
+scms:
+  default:
+    kind: github
+    spec:
+      owner: "{{ .scm.owner }}"
+      repository: "{{ .scm.repository }}"
+      branch: "{{ .scm.branch }}"
+
+autodiscovery:
+  crawlers:
+    pyproject:
+      rootdir: "."
+      versionfilter:
+        kind: semver
+        pattern: minor
+  scmid: default
+  actionid: default
+
+actions:
+  default:
+    title: 'deps: update Python dependencies'
+    kind: github/pullrequest
+    spec:
+      labels:
+        - chore
+        - skip-changelog
+    scmid: default

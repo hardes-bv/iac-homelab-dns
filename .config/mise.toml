@@ -1,0 +1,3 @@
+[tools]
+python = '3.13.14'
+"github:updatecli/updatecli" = '0.119.0'

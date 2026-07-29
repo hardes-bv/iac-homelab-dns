@@ -1,0 +1,7 @@
+name: "UpdateCLI Policies to apply"
+policies:
+  - name: Run local UpdateCLI pipelines
+    config:
+      - updatecli/updatecli.d/
+    values:
+      - updatecli/values.d/scm.yaml

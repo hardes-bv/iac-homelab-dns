@@ -1,0 +1,10 @@
+name: iac-homelab-dns
+description: Manage Root DNS entries per domain
+runtime:
+  name: python
+  options:
+    toolchain: uv
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: python
