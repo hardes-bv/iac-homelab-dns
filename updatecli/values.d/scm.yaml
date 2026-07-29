@@ -1,0 +1,6 @@
+scm:
+  commitusingapi: true
+  enabled: true
+  owner: hardes-bv
+  repository: iac-homelab-dns
+  branch: main

@@ -1,0 +1,6 @@
+environment:
+  - scaleway/admin
+config:
+  iac-homelab-dns:dns_zone: hardes.be
+  iac-homelab-dns:zone: test
+  iac-homelab-dns:project_name: homelab-test

@@ -1,0 +1,11 @@
+[project]
+name = "iac-homelab-dns"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pulumi>=3.220.0",
+    "pulumiverse-scaleway>=1.43.0",
+    "pydantic>=2.12.5",
+]
