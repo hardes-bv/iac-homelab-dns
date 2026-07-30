@@ -72,7 +72,10 @@ pulumi_dns_policy = scw.iam.Policy(
         rules=[
             scw.iam.PolicyRuleArgs(
                 permission_set_names=["DomainsDNSFullAccess"],
-                project_ids=[scw_homelab_project.project_id],
+                # TODO limit from org to project level once this is fixed:
+                # https://github.com/pulumi/pulumi/issues/17181
+                # project_ids=[scw_homelab_project.project_id],
+                organization_id=scw_organization_id,
             )
         ]
     )
