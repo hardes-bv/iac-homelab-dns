@@ -30,7 +30,7 @@ args = scw.domain.RecordArgs(
     data="ns0.dom.scw.cloud.",
     project_id=scw_parent_project.project_id,
 )
-scw.domain.Record(
+ns1 = scw.domain.Record(
     f"{sub_zone}-ns-1",
     args,
     opts=pulumi.ResourceOptions(
@@ -39,7 +39,7 @@ scw.domain.Record(
 )
 
 args.data = "ns1.dom.scw.cloud."
-scw.domain.Record(
+ns2 = scw.domain.Record(
     f"{sub_zone}-ns-2",
     args,
     opts=pulumi.ResourceOptions(
@@ -80,3 +80,8 @@ pulumi_dns_policy = scw.iam.Policy(
         ]
     )
 )
+
+pulumi.export("accessKey", pulumi_api_key.access_key)
+pulumi.export("secretKey", pulumi_api_key.secret_key)
+with open('./Pulumi.README.md') as f:
+    pulumi.export('readme', f.read())
