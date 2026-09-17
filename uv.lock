@@ -291,16 +291,16 @@ wheels = [
 
 [[package]]
 name = "pulumiverse-scaleway"
-version = "1.55.1"
+version = "1.56.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "parver" },
     { name = "pulumi" },
     { name = "semver" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/34/c6/6a6c37014632835f554aca83e847c355a30483ddecb5b8eb3ce3dac04b9c/pulumiverse_scaleway-1.55.1.tar.gz", hash = "sha256:852cc68df7b4b44035d3c5233e2d216b9d7154383e86b23b24da7bde7edb1e8b", size = 1245200, upload-time = "2026-09-09T08:33:50.383Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/3e/44/2784e1432b678c7831026ffe1b9f872adf807d4051d3a137edae37e6b0ac/pulumiverse_scaleway-1.56.1.tar.gz", hash = "sha256:7c06ec77d12567200d166fd980779a574bff14b5d26549395751865fcf8c1817", size = 1248244, upload-time = "2026-09-17T09:03:07.219Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/18/3a/9d3da978045481721607d33a69f0732eeb7075abb6fe3bdfff7e544b242a/pulumiverse_scaleway-1.55.1-py3-none-any.whl", hash = "sha256:82387f68a6c1e2eb2847016bcac082473d64d4ab26b8e57ad3f59dabb899d190", size = 1919670, upload-time = "2026-09-09T08:33:48.483Z" },
+    { url = "https://files.pythonhosted.org/packages/17/3c/3b7ee234e5a529e75a529d3ecf8268795b6e7015d7f4200090d665bb6efa/pulumiverse_scaleway-1.56.1-py3-none-any.whl", hash = "sha256:80f099d7a5d857321ccc4d92d6dd4c318a4e4e0b2a67930fcbae560b3e3ab2a5", size = 1923679, upload-time = "2026-09-17T09:03:05.791Z" },
 ]
 
 [[package]]
