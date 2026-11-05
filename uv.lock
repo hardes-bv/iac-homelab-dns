@@ -269,7 +269,7 @@ wheels = [
 
 [[package]]
 name = "pulumi"
-version = "3.273.0"
+version = "3.274.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "debugpy" },
@@ -286,7 +286,7 @@ dependencies = [
     { name = "typing-extensions" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/87/82/9c905fe6ee2d946f1323c3de829462947da4a9dd946d686d5e47a994d940/pulumi-3.273.0-py3-none-any.whl", hash = "sha256:9519e452064975d30509779c241377780e128d9b2ffb1a95882d9f7e83eb82c9", size = 445722, upload-time = "2026-10-28T19:52:43.954Z" },
+    { url = "https://files.pythonhosted.org/packages/59/ca/83a9de5cd3d6d0b2286dbd23fc3ed9b73ea33a89db576cff2a1b19a66e6a/pulumi-3.274.1-py3-none-any.whl", hash = "sha256:bb0aed7f7e5649cb1eb83c3382315b7664e008487807384d79bb4c254da0368c", size = 450550, upload-time = "2026-11-05T16:59:30.93Z" },
 ]
 
 [[package]]
