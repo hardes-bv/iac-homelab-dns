@@ -16,24 +16,6 @@ wheels = [
 ]
 
 [[package]]
-name = "arpeggio"
-version = "2.0.3"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/3b/58/ba011f3cf8291804ce80f9d81289ac15f0319a27f9d7e3c124aa5e4981cc/Arpeggio-2.0.3.tar.gz", hash = "sha256:9e85ad35cfc6c938676817c7ae9a1000a7c72a34c71db0c687136c460d12b85e", size = 766566, upload-time = "2025-09-12T12:45:20.594Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/84/4d/53b8186b41842f7a5e971b1d1c28e678364dcf841e4170f5d14d38ac1e2a/Arpeggio-2.0.3-py2.py3-none-any.whl", hash = "sha256:9374d9c531b62018b787635f37fd81c9a6ee69ef2d28c5db3cd18791b1f7db2f", size = 54656, upload-time = "2025-09-12T12:45:17.971Z" },
-]
-
-[[package]]
-name = "attrs"
-version = "25.4.0"
-source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/6b/5c/685e6633917e101e5dcb62b9dd76946cbb57c26e133bae9e0cd36033c0a9/attrs-25.4.0.tar.gz", hash = "sha256:16d5969b87f0859ef33a48b35d55ac1be6e42ae49d5e853b597db70c35c57e11", size = 934251, upload-time = "2025-10-06T13:54:44.725Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/3a/2a/7cc015f5b9f5db42b7d48157e23356022889fc354a2813c15934b7cb5c0e/attrs-25.4.0-py3-none-any.whl", hash = "sha256:adcf7e2a1fb3b36ac48d97835bb6d8ade15b8dcce26aba8bf1d14847b57a3373", size = 67615, upload-time = "2025-10-06T13:54:43.17Z" },
-]
-
-[[package]]
 name = "debugpy"
 version = "1.8.20"
 source = { registry = "https://pypi.org/simple" }
@@ -240,19 +222,6 @@ wheels = [
 ]
 
 [[package]]
-name = "parver"
-version = "0.5"
-source = { registry = "https://pypi.org/simple" }
-dependencies = [
-    { name = "arpeggio" },
-    { name = "attrs" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/cc/e5/1c774688a90f0b76e872e30f6f1ba3f5e14056cd0d96a684047d4a986226/parver-0.5.tar.gz", hash = "sha256:b9fde1e6bb9ce9f07e08e9c4bea8d8825c5e78e18a0052d02e02bf9517eb4777", size = 26908, upload-time = "2023-10-03T21:06:54.506Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/0f/4c/f98024021bef4d44dce3613feebd702c7ad8883f777ff8488384c59e9774/parver-0.5-py3-none-any.whl", hash = "sha256:2281b187276c8e8e3c15634f62287b2fb6fe0efe3010f739a6bd1e45fa2bf2b2", size = 15172, upload-time = "2023-10-03T21:06:52.796Z" },
-]
-
-[[package]]
 name = "protobuf"
 version = "6.33.5"
 source = { registry = "https://pypi.org/simple" }
@@ -291,16 +260,16 @@ wheels = [
 
 [[package]]
 name = "pulumiverse-scaleway"
-version = "1.60.0"
+version = "1.62.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "parver" },
+    { name = "packaging" },
     { name = "pulumi" },
     { name = "semver" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/49/5d/004ec824615a81277a7558f07cb27990d062c93a49edee5dae91acf2d3cc/pulumiverse_scaleway-1.60.0.tar.gz", hash = "sha256:f92edd72289031cb002b593bb4afa636e61f8e9beab36318a2c0d9bcece1c25d", size = 1297422, upload-time = "2026-10-24T18:44:45.701Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/4e/66/e3b17283e08bb56572035e760301e78c20c4fd149b265f0602c844346f24/pulumiverse_scaleway-1.62.0.tar.gz", hash = "sha256:adf6ac3dfd0026c1a4173773259769d0a76628ccff116e8477696e0ef1219618", size = 1357336, upload-time = "2026-11-08T07:12:00.647Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/fa/35/f2a1798e5cbed73c81bd0612aaf9027367b81484b2b023b47a1760420ae1/pulumiverse_scaleway-1.60.0-py3-none-any.whl", hash = "sha256:9a0859950410e7d150c6c5939dded5e452090abb2b90bdb2520d139b4b0b2cb9", size = 1992751, upload-time = "2026-10-24T18:44:44.432Z" },
+    { url = "https://files.pythonhosted.org/packages/55/b4/4e12e4c345e7f7f8a44d32e03aa399334127e6c0527cf9e4952184c97ea9/pulumiverse_scaleway-1.62.0-py3-none-any.whl", hash = "sha256:95d15ea738381b475c6073ffb3d1b32264ade250894613b2d0d7f0ca567b98f5", size = 2039663, upload-time = "2026-11-08T07:11:59.087Z" },
 ]
 
 [[package]]
